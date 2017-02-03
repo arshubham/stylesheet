@@ -132,7 +132,7 @@ style "murrine-default"
 		progressbarstyle        = 1
 		reliefstyle             = 3		# 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
 		rgba                    = FALSE		# Alpha transparency
-		roundness               = 2		# 0 = square
+		roundness               = 0		# 0 = square
 		scrollbarstyle          = 0		# 0 = nothing
 		separatorstyle          = 1
 		shadow_shades           = { 2.0, 1.0 }
@@ -294,7 +294,7 @@ style "murrine-notebook" = "murrine-default"
 	bg[NORMAL]				= shade (1.06, @bg_color)	# selected tab entire
 	bg[ACTIVE]				= shade (0.85, @bg_color)	# unselected tab
 
-	engine "murrine" { roundness = 4 }
+	engine "murrine" { roundness = 0 }
 }
 
 style "murrine-progressbar" = "murrine-thin"
@@ -303,7 +303,7 @@ style "murrine-progressbar" = "murrine-thin"
 	bg[SELECTED]				= @bg_color
 
 	engine "murrine" {
-		roundness 			= 100
+		roundness 			= 0
 		highlight_shade     		= 1.0 
 		lightborder_shade   		= 2.0
 		gradient_shades     		= {0.90,1.09,1.10,1.30}
@@ -326,7 +326,7 @@ style "murrine-scale" = "murrine-wider"
 		border_shades 			= {0.8, 0.6}
 		contrast			= 0.8
 		lightborderstyle		= 1
-		roundness			= 7
+		roundness			= 0
 		trough_shades			= {0.9, 1.1}
 	}
 }
@@ -337,7 +337,7 @@ style "murrine-scrollbar"
 	bg[ACTIVE]				= @base_color
 	
 	engine "murrine" {
-		roundness			= 2
+		roundness			= 0
 		gradient_shades			= {1.0,1.0,1.0,1.0}
 		highlight_shade			= 1.0
 		glow_shade			= 1.0

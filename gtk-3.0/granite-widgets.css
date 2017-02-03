@@ -25,7 +25,6 @@
 
 .avatar {
     border: 1px solid alpha (#000, 0.35);
-    border-radius: 50%;
     box-shadow:
         inset 0 0 0 1px alpha (#fff, 0.05),
         inset 0 1px 0 0 alpha (#fff, 0.45),
@@ -42,7 +41,6 @@
 .titlebar .back-button {
     border-image: -gtk-scaled(url("assets/button-back.svg"), url("assets/button-back@2.svg")) 2 3 3 11 / 2px 3px 3px 11px stretch;
     border-width: 1px 3px 3px 11px;
-    border-radius: 0 2.5px 2.5px 0;
     box-shadow: none;
     padding: 2px 0;
 }
@@ -51,20 +49,17 @@
 .titlebar .back-button:focus {
     border-image: -gtk-scaled(url("assets/button-back-focus.svg"), url("assets/button-back-focus@2.svg")) 2 3 3 11 / 2px 3px 3px 11px stretch;
     border-width: 1px 3px 3px 11px;
-    border-radius: 0 2.5px 2.5px 0;
     box-shadow: none;
 }
 
 .back-button:dir(rtl) {
     border-image: -gtk-scaled(url("assets/button-back-rtl.svg"), url("assets/button-back-rtl@2.svg")) 2 11 3 3 / 2px 11px 3px 3px stretch;
     border-width: 1px 11px 3px 3px;
-    border-radius: 2.5px 0 0 2.5px;
 }
 
 .back-button:focus:dir(rtl) {
     border-image: -gtk-scaled(url("assets/button-back-focus-rtl.svg"), url("assets/button-back-focus-rtl@2.svg")) 2 11 3 3 / 2px 11px 3px 3px stretch;
     border-width: 1px 11px 3px 3px;
-    border-radius: 2.5px 0 0 2.5px;
 }
 
 .back-button:backdrop {
@@ -77,7 +72,6 @@
 .back-button:backdrop:dir(rtl) {
     border-image: -gtk-scaled(url("assets/button-back-backdrop-rtl.svg"), url("assets/button-back-rtl@2.svg")) 2 11 3 3 / 2px 11px 3px 3px stretch;
     border-width: 1px 11px 3px 3px;
-    border-radius: 2.5px 0 0 2.5px;
     box-shadow: none;
 }
 
@@ -86,7 +80,6 @@
 .back-button:focus:active {
     border-image: -gtk-scaled(url("assets/button-back-active.svg"), url("assets/button-back-active@2.svg")) 2 3 3 11 / 2px 3px 3px 11px stretch;
     border-width: 1px 3px 3px 11px;
-    border-radius: 0 2.5px 2.5px 0;
     box-shadow: none;
 }
 
@@ -95,7 +88,6 @@
 .back-button:focus:active:dir(rtl) {
     border-image: -gtk-scaled(url("assets/button-back-active-rtl.svg"), url("assets/button-back-active-rtl@2.svg")) 2 11 3 3 / 2px 11px 3px 3px stretch;
     border-width: 1px 11px 3px 3px;
-    border-radius: 2.5px 0 0 2.5px;
     box-shadow: none;
 }
 
@@ -118,7 +110,7 @@
 
 .card:checked {
     border: 3px solid @selected_bg_color;
-    border-radius: 3px;
+    border-radius: 0;
 }
 
 .card.collapsed {
@@ -152,7 +144,7 @@
     background-image: none;
     background-color: alpha (#000, 0.4);
     color: @titlebar_color;
-    border-radius: 10px;
+    border-radius: 0;
     padding: 0 6px;
     margin: 0 3px;
     text-shadow: 0 1px alpha (#000, 0.1);
@@ -363,11 +355,11 @@ GraniteWidgetsWelcome .h3 {
 
 GtkWindow.rounded,
 GtkWindow.rounded .action-bar {
-    border-radius: 0 0 4px 4px;
+    border-radius: 0;
 }
 
 GtkWindow.rounded.window-frame {
-    border-radius: 3px;
+    border-radius: 0;
 }
 
 /**************
